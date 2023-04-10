@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Chat</title>
+  <meta name="author" content="Ahad Abdul" />
+  <title>Simple Sidebar - Start Bootstrap Template</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/stle.css" rel="stylesheet" />
+</head>
+<body>
+<div class="d-flex" id="wrapper">
+  <!-- Sidebar-->
+  <div class="border-end bg-white" id="sidebar-wrapper">
+    <div class="sidebar-heading border-bottom bg-light">Chat Server</div>
+    <button onclick="newRoom()">Create Room </button>
+    <button onclick="refreshRooms()">Refresh</button>
+    <div id="room">
+      <input type="text" id="room-code" placeholder="Enter Room Code...">
+      <button id="btRoom" onclick="enterRoom(document.getElementById('room-code').value)">ENTER</button>
+    </div>
+    <div class="list-group list-group-flush">
+      <table class="table table-hover" id="tableOfRooms">
+        <thead>
+        <tr>
+          <th scope="col">List Of Chat Rooms</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- Page content wrapper-->
+  <div id="page-content-wrapper">
+    <!-- Top navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <div class="container-fluid">
+        <h3 id="roomNameHeader">Welcome To Chat Server</h3>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Page content-->
+    <div class="container-fluid">
+      <textarea title="Chat Log" id="log" readonly
+                style="display: block; width: 100%; height: 600px; resize: none; margin: 0; padding: 0; border: 0;"></textarea>
+      <input title="Chat Input" id="input" type="text" style="display: block; width: 100%; border-width: 1px 0 1px 0;" autofocus placeholder="Type Here..."/>
+    </div>
+  </div>
+</div>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/main.js"></script>
+</body>
+</html>
