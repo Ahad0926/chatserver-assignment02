@@ -1,13 +1,14 @@
-Chat Application
+#Chat Application
 Welcome to the Chat Application! This application allows users to create and join chat rooms to communicate with other users in real-time.
 
-Prerequisites
+##Prerequisites
 Before running this application, you will need to have the following installed:
 
-Java Development Kit (JDK) 1.8 or later
-Maven
-Glassfish server
-Running the Application
+- Java Development Kit (JDK) 1.8 or later
+- Maven
+- Glassfish server
+
+##Running the Application
 To run the ChatResourceAPI, deploy it on a remote Glassfish server. To deploy, navigate to the root directory of the project and run the following command:
 
 This will build the project and create a war file in the target directory. Deploy the war file on a remote Glassfish server.
