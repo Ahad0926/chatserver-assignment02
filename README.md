@@ -10,10 +10,16 @@ Before running this application, you will need to have the following installed:
 
 ## Running the Application
 To run the ChatResourceAPI, deploy it on a remote Glassfish server. To deploy, navigate to the root directory of the project and run the following command:
+```
+mvn clean install
+```
 
 This will build the project and create a war file in the target directory. Deploy the war file on a remote Glassfish server.
 
 To run the ChatServer, deploy it on a local Glassfish server. To deploy, navigate to the root directory of the project and run the following command:
+```
+mvn clean install
+```
 
 This will build the project and create a war file in the target directory. Deploy the war file on a local Glassfish server.
 
